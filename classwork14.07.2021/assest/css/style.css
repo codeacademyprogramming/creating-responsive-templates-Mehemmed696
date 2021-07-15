@@ -7,16 +7,22 @@
 
 header{
     width: 100%;
+    height: 500px;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-position: center; */
 }
-.background{
-    width: 100%;
-}
+
 .background-img{
+    /* position: relative; */
     width: 100%;
     height: 500px;
     background-image: url('../image/photographer.jpg');
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,9 +31,9 @@ header{
 
 .white-box{
     position: absolute;
-    top:35%;
-    left: 50%;
-    transform: translate(-50%);
+   top: 30%;
+    /* left: 50%; */
+    /* transform: translate(-50%); */
     width: 300px;
     height: 150px;
     border: 1px solid white;
@@ -51,10 +57,13 @@ header{
     font-size: 24px;
 }
 
+
+
 nav .nav-white-3{
     position: absolute;
-    top: 72%;
-    left: 50%;
+    bottom: -30px;
+    /* top: 72%; */
+    /* left: 50%; */
     transform: translatex(-50%);
     border-radius: 15px;
     /* background: rgb(214, 214, 214); */
@@ -154,3 +163,13 @@ nav .nav-white-3 li a{
      color:white
  }
 
+ @media screen and(min-width: 1000px) {
+    .white-box-text p{
+       display: block; 
+    }
+    /* .white-box-text p{
+        display: none;
+    } */
+
+    
+}
